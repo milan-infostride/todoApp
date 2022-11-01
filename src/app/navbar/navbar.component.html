@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">TodoApp</a>
+    <a class="navbar-brand" href="#">Address Book</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -14,12 +14,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item" class="text-light align-self-center me-3">
+        <li class="nav-item" class="text-light align-self-center me-3" [ngClass]="{align-self-center: inLaptop}">
           Hello Guest
         </li>
         <li class="nav-item">
           <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Login / Signup
             </button>
             <ul class="dropdown-menu">
